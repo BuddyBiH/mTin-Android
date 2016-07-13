@@ -39,17 +39,7 @@ public class SmokeTest {
 		cap.setCapability(MobileCapabilityType.APP_PACKAGE, "com.demo.mtin.mtin");
 		cap.setCapability(MobileCapabilityType.APP_ACTIVITY, "com.demo.mtin.mtin.SplashActivity");
 		
-		//AndroidDriver driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"),cap);
-		
-		for (int i = 10; i > 0; i--) {
-        try {
-            AndroidDriver driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"),cap);
-            // If we successfully attach to appium, exit the loop.
-            i = 0;
-        } catch (UnreachableBrowserException e) {
-            LOGGER.info("Waiting for Appium to start");
-        }
-    }
+		AndroidDriver driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"),cap
 		
 		
 		
