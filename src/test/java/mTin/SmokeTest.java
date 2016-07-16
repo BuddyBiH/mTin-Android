@@ -39,7 +39,7 @@ public class SmokeTest {
 		cap.setCapability(MobileCapabilityType.APP_PACKAGE, "com.demo.mtin.mtin");
 		cap.setCapability(MobileCapabilityType.APP_ACTIVITY, "com.demo.mtin.mtin.SplashActivity");
 		
-		AndroidDriver driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"),cap
+		AndroidDriver driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"),cap));
 		
 		
 		
